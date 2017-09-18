@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<!-- <p>
+  <strong>Question:</strong>
+  <%= @writing.question %>
+</p>
+
+<p>
+  <strong>Correct:</strong>
+  <%= @writing.correct %>
+</p>
+
+<p>
+  <strong>Hint:</strong>
+  <%= @writing.hint %>
+</p>
+
+<p>
+  <strong>Explanation:</strong>
+  <%= @writing.explanation %>
+</p> -->
+<h1>英語書き取り問題</h1>
+<h4>
+表示されている文章を英語に翻訳してください<br>
+　※文頭も小文字で構いません<br>
+　※文末のピリオドは不要です<br>
+</h4>
+<br>
+<!--問題表示/回答入力フォーム-->
+<table class="form" >
+  <tr>
+    <td>問題<%= @writing.id %>　</td>
+    <td> <%= @writing.question %> </td>
+  </tr>
+  <tr>
+    <td>回答　</td>
+    <td >
+      <%= form_tag(controler:"writings" ,action:"show" ) do %>
+      <%= text_field_tag :answer ,"",size:50 ,placeholder:"ここに入力してエンター" ,id:"ans" ,autocomplete:"off"%>
+      <% end %>
+      <script type="text/javascript">
+      document.getElementById('ans').focus();
+      </script>
+
+
+    </td>
+  </tr>
+
+</table>
+
+
+<br>
+<!-- 回答チェック -->
+<% if @answer.nil? %>
+  <% p "ニル"%>
+<% elsif @answer=="" %>
+  <% p "からっぽ" %>
+  <p> 回答を入力して</p>
+<% else %>
+  <table class="writCK" >
+    <tr>
+      <td>回答　</td>
+      <td> <%= @answer %> </td>
+    </tr>
+    <tr>
+      <td> <%= @dec %>　</td>
+      <td> <%= @judge.join %> </td>
+    </tr>
+    <% if @point ==0 %>
+      <tr>
+        <td> 解説　</td>
+        <td> <%= @writing.explanation %> </td>
+      </tr>
+    <% elsif @point >5 %>
+      <tr>
+        <td> ヒント　</td>
+        <td> <%= @writing.hint %> </td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+<br>
+<br>
+
+<%= link_to '一覧に戻る', writings_path,class: 'btn btn-default btn-xs' %>

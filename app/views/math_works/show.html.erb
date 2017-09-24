@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+<h1>計算ドリルのランダム生成</h1>
+<p>
+  <%= @math_work.digit1 %>桁と<%= @math_work.digit2 %>桁の<%= @math_work.operator %>
+</p>
+<p>問題数：<%= @math_work.times %>問</p>
+
+＃＃　回答を入力するたびに問題が再作成されてしまう　＃＃
+<!-- 問題一覧作成 -->
+<table class='table table-bordered'>
+  <thead>
+    <tr>
+      <th>問題番号</th>
+      <th>問題式</th>
+      <th>解答欄</th>
+      <th>判定</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% for i in 1..@math_work.times %>
+    <% x = format("%0#{@math_work.digit1}d", SecureRandom.random_number(10**@math_work.digit1)) %>
+    <% y = format("%0#{@math_work.digit2}d", SecureRandom.random_number(10**@math_work.digit2)) %>
+
+      <tr>
+        <td>問題<%= i %></td>
+        <td><%= x %> ＋ <%= y %> =</td>
+        <td><%= form_tag(controler:"math_works" ,action:"show" ) do %>
+            <%= text_field_tag :answer ,"",size:20 ,placeholder:"ここに入力してエンター" ,id:"ans" ,autocomplete:"off"%>
+            <% end %></td>
+        <td><%= x.to_i + y.to_i %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<!--  -->
+<%= link_to '一覧に戻る', math_works_path,class: 'btn btn-default btn-xs' %>

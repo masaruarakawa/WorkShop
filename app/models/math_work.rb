@@ -1,0 +1,2 @@
+class MathWork < ApplicationRecord
+end

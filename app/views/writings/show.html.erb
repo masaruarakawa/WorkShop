@@ -1,24 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<!-- <p>
-  <strong>Question:</strong>
-  <%= @writing.question %>
-</p>
-
-<p>
-  <strong>Correct:</strong>
-  <%= @writing.correct %>
-</p>
-
-<p>
-  <strong>Hint:</strong>
-  <%= @writing.hint %>
-</p>
-
-<p>
-  <strong>Explanation:</strong>
-  <%= @writing.explanation %>
-</p> -->
 <h1>英語書き取り問題</h1>
 <h4>
 表示されている文章を英語に翻訳してください<br>
@@ -66,7 +47,7 @@
       <td> <%= @dec %>　</td>
       <td> <%= @judge.join %> </td>
     </tr>
-    <% if @point ==0 %>
+    <% if @dec =="b(≧∇≦）正解！" %>
       <tr>
         <td> 解説　</td>
         <td> <%= @writing.explanation %> </td>

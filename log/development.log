@@ -7257,3 +7257,1388 @@ Processing by WritingsController#index as HTML
 Completed 200 OK in 160ms (Views: 128.5ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-09-23 15:49:05 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMathWorks (20170923064744)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "math_works" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "digit1" integer, "digit2" integer, "operator" integer, "times" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170923064744"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-09-23 15:49:47 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 791ms (Views: 776.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/math-work" for 127.0.0.1 at 2017-09-23 15:50:02 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/math-work"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/math_works" for 127.0.0.1 at 2017-09-23 15:50:57 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  [1m[36mMathWork Load (3.1ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 144ms (Views: 123.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/math_works/new" for 127.0.0.1 at 2017-09-23 15:51:01 +0900
+Processing by MathWorksController#new as HTML
+  Rendering math_works/new.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (32.3ms)
+  Rendered math_works/new.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 226ms (Views: 203.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/math_works" for 127.0.0.1 at 2017-09-23 15:51:11 +0900
+Processing by MathWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uIM6qWfPLg9QK/ZApPAQhCAWRc15Xxtgp6pTDISBaTPuWbda1s1KvrXBMlNi2Twc1zAldu9aGGMdhlIx1lyPpA==", "math_work"=>{"digit1"=>"2", "digit2"=>"2", "operator"=>"1", "times"=>"1"}, "commit"=>"Create Math work"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  [1m[32mINSERT INTO "math_works" ("digit1", "digit2", "operator", "times", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["digit1", 2], ["digit2", 2], ["operator", 1], ["times", 1], ["created_at", "2017-09-23 06:51:11.445852"], ["updated_at", "2017-09-23 06:51:11.445852"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works/1
+Completed 302 Found in 49ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-23 15:51:11 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.4ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 185ms (Views: 140.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-23 15:51:14 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  [1m[36mMathWork Load (3.6ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 166ms (Views: 159.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-09-23 15:52:49 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (12.9ms)
+  [1m[36mWriting Load (1.4ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 178ms (Views: 136.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-23 15:52:51 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 141ms (Views: 135.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:50:08 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 382ms (Views: 373.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 10:50:21 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  [1m[36mMathWork Load (0.4ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 87ms (Views: 79.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:50:35 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:52:49 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:53:05 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:53:50 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:54:09 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:54:25 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:54:33 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:54:48 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:55:03 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:55:28 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:55:42 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:55:58 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:56:10 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:56:18 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:56:38 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:56:46 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 57ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:57:08 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-24 10:57:23 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 10:57:39 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (15.7ms)
+  [1m[36mWriting Load (0.4ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 86ms (Views: 73.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/writings/1" for 127.0.0.1 at 2017-09-24 10:57:57 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWriting Load (0.9ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 72ms (Views: 64.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-09-24 11:00:54 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M7JR5NGrJyeZaNYB3STFCbgw1OTn4YoccXOf8up66vA9gBdKqtPrE5cC+BwT5EUYcTXcSGg62ezSZFiVqLVdNw==", "answer"=>"ddafee", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.4ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 39.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-09-24 11:01:03 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qHA7bundph6DZ/mxw1F6Eu9ufkuWwnRi0gJdJc542AZ8z3qNnm75UsmYdvU3JG2AEng8N9Hkg+RIN79rk3/1WA==", "answer"=>"hellow world", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.3ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 61ms (Views: 55.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-09-24 11:01:24 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hyt24FfMm415nx+cofskVkFESIc1GzLDqc9PXcsAkiHLlDcDIH/EwTNgkNhVjjPEvFIK+3I9xUUz+q0Tlge/fw==", "answer"=>"hello world", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-09-24 11:01:29 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yG1SBcEFS4C4J4BIPD5dlpBZoxrmoSKi0DhMcq5Kt5wc0hPmtrYUzPLYDwzIS0oEbU/hZqGH1SRKDa48802awg==", "answer"=>"hello worldeeeeeee", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.1ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-09-24 11:03:12 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fBWW8fKizYr6s9DUw1CRI2L1pMWrtcAgzsq/vA3kI3qoqtcShRGSxrBMX5A3JYaxn+PmueyTN6ZU/13yUOMOJA==", "answer"=>"hello worldeeeeeee ", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-09-24 11:03:24 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l5j09i1wy4+aGS3ZeOw15u4qMcr+7JvfufMtsMKDIdBDJ7UVWsOUw9Dmop2MmSJ0EzxztrnKbFkjxs/+n4QMjg==", "answer"=>"hello world", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.1ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-09-24 11:03:32 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gWfN9CvChC89zD6wxekHtTdJZ4RAXDlDoYhh6xPIDh1V2IwXXHHbY3czsfQxnBAnyl8l+Ad6zsU7vYOlTs8jQw==", "answer"=>"hello world ", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.1ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:03:52 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  [1m[36mMathWork Load (0.4ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:04:07 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:04:09 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (2.9ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:04:10 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:06:04 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.3ms)
+  Rendered math_works/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: math_work, local: true) do |form| %>
+    2:   <% if math_work.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(math_work.errors.count, "error") %> prohibited this math_work from being saved:</h2>
+    5: 
+  
+app/views/math_works/_form.html.erb:2:in `block in _app_views_math_works__form_html_erb__309049778365688556_70360480575120'
+app/views/math_works/_form.html.erb:1:in `_app_views_math_works__form_html_erb__309049778365688556_70360480575120'
+app/views/math_works/index.html.erb:3:in `_app_views_math_works_index_html_erb___2560008549965055203_70360470830900'
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:07:00 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (3.4ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 76ms (Views: 62.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:07:02 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.8ms)
+  Rendered math_works/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: math_work, local: true) do |form| %>
+    2:   <% if math_work.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(math_work.errors.count, "error") %> prohibited this math_work from being saved:</h2>
+    5: 
+  
+app/views/math_works/_form.html.erb:2:in `block in _app_views_math_works__form_html_erb__309049778365688556_70360517301660'
+app/views/math_works/_form.html.erb:1:in `_app_views_math_works__form_html_erb__309049778365688556_70360517301660'
+app/views/math_works/index.html.erb:3:in `_app_views_math_works_index_html_erb___2560008549965055203_70360517395300'
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:07:05 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (4.6ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:07:43 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (5.0ms)
+  Rendered math_works/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: math_work, local: true) do |form| %>
+    2:   <% if math_work.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(math_work.errors.count, "error") %> prohibited this math_work from being saved:</h2>
+    5: 
+  
+app/views/math_works/_form.html.erb:2:in `block in _app_views_math_works__form_html_erb__309049778365688556_70360501929280'
+app/views/math_works/_form.html.erb:1:in `_app_views_math_works__form_html_erb__309049778365688556_70360501929280'
+app/views/math_works/index.html.erb:3:in `_app_views_math_works_index_html_erb___2560008549965055203_70360502077880'
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:14:48 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (3.1ms)
+  [1m[36mWriting Load (0.4ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 68ms (Views: 54.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:14:50 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (5.5ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 63ms (Views: 51.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:14:52 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (2.6ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 56ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:14:52 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.5ms)
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 66ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:16:47 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.9ms)
+  [1m[36mMathWork Load (0.4ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:17:37 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.7ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 59ms (Views: 56.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:18:46 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.4ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:19:26 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.8ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:19:34 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (2.8ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:19:35 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.9ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 78ms (Views: 74.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:19:36 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (2.8ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:19:38 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.8ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 58ms (Views: 53.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:19:56 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.4ms)
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:20:35 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (0.9ms)
+  Rendered math_works/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/witch/WorkShop/app/views/math_works/_form.html.erb:15: syntax error, unexpected ':', expecting ')'
+r.append=( form.label :digit1:数１の桁数 , class: 'col-
+                              ^
+/Users/witch/WorkShop/app/views/math_works/_form.html.erb:20: syntax error, unexpected ':', expecting ')'
+r.append=( form.label :digit2:数２の桁数, class: 'col-s
+                              ^):
+  
+app/views/math_works/_form.html.erb:15: syntax error, unexpected ':', expecting ')'
+app/views/math_works/_form.html.erb:20: syntax error, unexpected ':', expecting ')'
+app/views/math_works/index.html.erb:3:in `_app_views_math_works_index_html_erb___2560008549965055203_70360517138440'
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:20:49 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (4.2ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:20:53 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (5.6ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:20:54 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (5.6ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:21:10 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.5ms)
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 56ms (Views: 52.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:21:57 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (5.7ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:22:42 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.1ms)
+  [1m[36mMathWork Load (0.4ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:23:07 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (3.4ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works" for 127.0.0.1 at 2017-09-24 11:23:12 +0900
+Processing by MathWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FlbNF4MDt16PI3eE8JkUqNz1oHoxlikorFmroN5LoyjkyNs4qX3J+eExlrw/hnnCMang88r2vtg5mI2RRpem3g==", "math_work"=>{"digit1"=>"", "digit2"=>"", "operator"=>"", "times"=>""}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "math_works" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-09-24 02:23:12.266875"], ["updated_at", "2017-09-24 02:23:12.266875"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works/2
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/math_works/2" for 127.0.0.1 at 2017-09-24 11:23:12 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:23:14 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.6ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works" for 127.0.0.1 at 2017-09-24 11:25:01 +0900
+Processing by MathWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"it6nOwdg/BqFx+zsQ/MxcLYYlWR0Oc6pJnDXLr4lJM94QLEULR6CvevVDdSM7FwaW0TV7Y9ZWVmzsfEfJvkhOQ==", "math_work"=>{"digit1"=>"", "digit2"=>"", "operator"=>"", "times"=>""}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "math_works" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-09-24 02:25:01.174372"], ["updated_at", "2017-09-24 02:25:01.174372"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"math_works"}, missing required keys: [:id]):
+  
+app/controllers/math_works_controller.rb:32:in `block (2 levels) in create'
+app/controllers/math_works_controller.rb:30:in `create'
+Started POST "/math_works" for 127.0.0.1 at 2017-09-24 11:25:14 +0900
+Processing by MathWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"it6nOwdg/BqFx+zsQ/MxcLYYlWR0Oc6pJnDXLr4lJM94QLEULR6CvevVDdSM7FwaW0TV7Y9ZWVmzsfEfJvkhOQ==", "math_work"=>{"digit1"=>"", "digit2"=>"", "operator"=>"", "times"=>""}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "math_works" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-09-24 02:25:14.921832"], ["updated_at", "2017-09-24 02:25:14.921832"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works
+Completed 302 Found in 15ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:25:14 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (6.4ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/math_works/4" for 127.0.0.1 at 2017-09-24 11:25:19 +0900
+Processing by MathWorksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fsKHPdCIA5h7HUdSJCdLbcy7KCAS+tRZqXYWOZ+3oQaqfcbepztc1DHiyBbQUlz/Ma1qXFXcI98zQ/R3wrCMWA==", "id"=>"4"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "math_works" WHERE "math_works"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:25:19 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.7ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/math_works/3" for 127.0.0.1 at 2017-09-24 11:25:22 +0900
+Processing by MathWorksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iafwehuma8ikWhfVanTfwDdVnUVllDUaPvCL6pHhBBhdGLGZbBU0hO6lmJGeAchSykPfOSKywpykxWmkzOYpRg==", "id"=>"3"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "math_works" WHERE "math_works"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:25:22 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (10.1ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:26:09 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.2ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:28:02 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (3.1ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:28:43 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (3.3ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:28:46 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 81ms (Views: 74.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:28:48 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (5.6ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1/edit" for 127.0.0.1 at 2017-09-24 11:28:54 +0900
+Processing by MathWorksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.4ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/edit.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.0ms)
+  Rendered math_works/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 57ms (Views: 51.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:28:57 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (6.0ms)
+  [1m[36mMathWork Load (0.4ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 62ms (Views: 59.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/math_works/1/edit" for 127.0.0.1 at 2017-09-24 11:29:45 +0900
+Processing by MathWorksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/edit.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (7.4ms)
+  Rendered math_works/edit.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/math_works/1" for 127.0.0.1 at 2017-09-24 11:29:49 +0900
+Processing by MathWorksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jWVXMiSbJo0zBwyZom0hnsFxCjiYyb6D76W3BDh3frBhgHi0F+xzZPLTZComwTVaRowc1u23lQFbBupL9PXpRQ==", "math_work"=>{"digit1"=>"2", "digit2"=>"2", "operator"=>"1", "times"=>"4"}, "commit"=>"登録/更新", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "math_works" SET "times" = ?, "updated_at" = ? WHERE "math_works"."id" = ?[0m  [["times", 4], ["updated_at", "2017-09-24 02:29:49.970695"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works/1
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:29:49 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:29:51 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.8ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:30:23 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:34:50 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for 4:Integer):
+    33:   </thead>
+    34: 
+    35:   <tbody>
+    36:     <% @math_work.times.each do |math_work| %>
+    37:       <tr>
+    38:         <td><%= math_work.digit1 %></td>
+    39:         <td><%= math_work.digit2 %></td>
+  
+app/views/math_works/show.html.erb:36:in `_app_views_math_works_show_html_erb___643397450133201751_70360515529740'
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:35:15 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (3.0ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:35:18 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for 4:Integer):
+    33:   </thead>
+    34: 
+    35:   <tbody>
+    36:     <% @math_work.times.each do |math_work| %>
+    37:       <tr>
+    38:         <td><%= @math_work.digit1 %></td>
+    39:         <td><%= @math_work.digit2 %></td>
+  
+app/views/math_works/show.html.erb:36:in `_app_views_math_works_show_html_erb___643397450133201751_70360475283920'
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:36:23 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.3ms)
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:36:25 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for 4:Integer):
+    33:   </thead>
+    34: 
+    35:   <tbody>
+    36:     <% @math_work.times.each do |math_work| %>
+    37:       <tr>
+    38:         <!-- <td><%= @math_work.digit1 %></td>
+    39:         <td><%= @math_work.digit2 %></td>
+  
+app/views/math_works/show.html.erb:36:in `_app_views_math_works_show_html_erb___643397450133201751_70360517365160'
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:37:35 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.2ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 56ms (Views: 52.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:37:39 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:37:56 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (5.9ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1/edit" for 127.0.0.1 at 2017-09-24 11:37:58 +0900
+Processing by MathWorksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/edit.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (2.8ms)
+  Rendered math_works/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/math_works/1" for 127.0.0.1 at 2017-09-24 11:38:03 +0900
+Processing by MathWorksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8bupksAo1jAigER2FlPqzWtONKW83GjBmTN0ClEXsOMdXoYU81+D2eNULMWS//4J7LMiS8miQ0MtkClFnZUnFg==", "math_work"=>{"digit1"=>"2", "digit2"=>"2", "operator"=>"1", "times"=>"11"}, "commit"=>"登録/更新", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "math_works" SET "times" = ?, "updated_at" = ? WHERE "math_works"."id" = ?[0m  [["times", 11], ["updated_at", "2017-09-24 02:38:03.102550"], ["id", 1]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works/1
+Completed 302 Found in 5ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:38:03 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:38:49 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:39:31 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:44:50 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 64ms (Views: 49.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:45:13 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (244.5ms)
+Completed 500 Internal Server Error in 251ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `x' for #<#<Class:0x007ffc26f04d10>:0x007ffc2640ea78>
+Did you mean?  @x):
+    39:         <td><%= @math_work.digit2 %></td>
+    40:         <td><%= @math_work.operator %></td> -->
+    41:         <td>問題<%= i %></td>
+    42:         <td><%= x %>＋</td>
+    43:       </tr>
+    44:     <% end %>
+    45:   </tbody>
+  
+app/views/math_works/show.html.erb:42:in `block in _app_views_math_works_show_html_erb___643397450133201751_70360475139240'
+app/views/math_works/show.html.erb:36:in `_app_views_math_works_show_html_erb___643397450133201751_70360475139240'
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:45:24 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:46:27 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:47:57 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 82ms (Views: 79.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:48:33 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.1ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/math_works/2" for 127.0.0.1 at 2017-09-24 11:48:39 +0900
+Processing by MathWorksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"92ziOlHnqNpjEygNWVwFCdr9Q0195VeGtqXZ6BO58TAj06PZJlT3linsp0mtKRKbJ+sBMTrDoAAskDumTr7cbg==", "id"=>"2"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "math_works" WHERE "math_works"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:48:39 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.9ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 94ms (Views: 91.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works" for 127.0.0.1 at 2017-09-24 11:48:50 +0900
+Processing by MathWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AJKBM4IqM1KnEvGSL357hDDPE/+RzBydbprjGQRsGPbULcDQ9ZlsHu3tftbbC2wWzdlRg9bq6xv0rwFXWWs1qA==", "math_work"=>{"digit1"=>"4", "digit2"=>"2", "operator"=>"2", "times"=>"4"}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "math_works" ("digit1", "digit2", "operator", "times", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["digit1", 4], ["digit2", 2], ["operator", 2], ["times", 4], ["created_at", "2017-09-24 02:48:50.546059"], ["updated_at", "2017-09-24 02:48:50.546059"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/math_works
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:48:50 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (3.3ms)
+  [1m[36mMathWork Load (0.5ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/math_works/5" for 127.0.0.1 at 2017-09-24 11:48:52 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works/5" for 127.0.0.1 at 2017-09-24 11:49:55 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works/5" for 127.0.0.1 at 2017-09-24 11:50:32 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMathWork Load (0.6ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 73ms (Views: 59.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/math_works/5" for 127.0.0.1 at 2017-09-24 11:52:59 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 100ms (Views: 97.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works/5" for 127.0.0.1 at 2017-09-24 11:53:15 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/5?controler=math_works" for 127.0.0.1 at 2017-09-24 11:53:23 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/math_works/5"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/math_works/5?controler=math_works" for 127.0.0.1 at 2017-09-24 11:54:14 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sXp+4evm7zKdvSWgLnrx5q+dkZ8FMtUZInz+R1H2cd9lxT8CnFWwftdCquTaD+Z0UovT40IUIp+4SRwJDPFcgQ==", "answer"=>"11", "controler"=>"math_works", "id"=>"5"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 66ms (Views: 48.4ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/math_works/5?controler=math_works" for 127.0.0.1 at 2017-09-24 11:54:18 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aVJFssgBavb2EQzu5p1HIodI8ZZvgi/zOLWJm3VWIem97QRRv7I1urzug6oS6FCwel6z6iik2HWigGvVKFEMtw==", "answer"=>"111", "controler"=>"math_works", "id"=>"5"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/5?controler=math_works" for 127.0.0.1 at 2017-09-24 11:55:30 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"biLJcPJyCqAf59fQxKDRCRNO7HtvaI4iDetnL5CRiMm6nYiThcFV7FUYWJQw1cab7liuByhOeaSX3oVhzZallw==", "answer"=>"lp@l@", "controler"=>"math_works", "id"=>"5"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 56ms (Views: 52.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-09-24 11:56:06 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (4.5ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 64ms (Views: 51.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/writings/1" for 127.0.0.1 at 2017-09-24 11:56:09 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-09-24 11:56:11 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (5.9ms)
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:56:14 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 70ms (Views: 64.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:56:59 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:57:17 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:59:00 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:59:41 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 74ms (Views: 70.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-09-24 11:59:57 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-09-24 12:01:04 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z6vaf2ttA6q5CJ0S0ipQkfQxHbHrW+H7w3/02J7HqoYbFJucHN5c5vP3ElYmX0cDCSdfzax9Fn1ZShaWw8CH2A==", "answer"=>"００", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-09-24 12:01:37 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/suEoRPr28tpX3qi/a4T90Zf7xW037i/GwEjWnIs2uzRG/x8/zwI2da8q5/g6/dIA89wBH1iWRmWebDNM+eNQ==", "answer"=>"11", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-09-24 12:02:09 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZJVfxo5hvhPRuQzN5EDd6Ent14uga7W6hX8rVA5+vqewKh4l+dLhX5tGg4kQNcp6tPuV9+dNQjwfSskaU3mT+Q==", "answer"=>"11", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-09-24 12:02:33 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eefBardyS2+xsdCgKTz8zeSrvJ2RNTG5sqVcDSu1FGCtWICJwMEUI/tOX+TdSetfGb3+4dYTxj8okL5DdrI5Pg==", "answer"=>"111", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-09-24 12:04:01 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ffTmy+ipzBGkWMvkknYNkb3Of7v5EhJnywq69lw+QOepS6conxqTXe6nRKBmAxoDQNg9x7405eFRP1i4ATltuQ==", "answer"=>"", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.1ms)
+
+

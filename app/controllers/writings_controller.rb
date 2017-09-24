@@ -31,7 +31,7 @@ class WritingsController < ApplicationController
         end
         p @judge.join
         p @point
-        if @point == 0
+        if @answer == @correct
           @dec ="b(≧∇≦）正解！"
         elsif @point < 3
           @dec ="(・Δ・)おしい"

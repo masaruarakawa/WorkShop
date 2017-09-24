@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170917022653) do
+ActiveRecord::Schema.define(version: 20170923064744) do
+
+  create_table "math_works", force: :cascade do |t|
+    t.integer "digit1"
+    t.integer "digit2"
+    t.integer "operator"
+    t.integer "times"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "writings", force: :cascade do |t|
     t.string "question"

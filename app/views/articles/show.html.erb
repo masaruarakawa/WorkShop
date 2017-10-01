@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @article.category %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @article.content %>
+</p>
+
+<p>
+  <strong>Tab1:</strong>
+  <%= @article.tab1 %>
+</p>
+
+<p>
+  <strong>Tab2:</strong>
+  <%= @article.tab2 %>
+</p>
+
+<p>
+  <strong>Tab3:</strong>
+  <%= @article.tab3 %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

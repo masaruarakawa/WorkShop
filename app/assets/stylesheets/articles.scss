@@ -1,0 +1,58 @@
+.tab-content input[type="radio"] {
+    display: none;
+  }
+
+  .tab-content label {
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: bold;
+    // font-size: 13px;
+    // color: #009900;
+    background-color: #696969;
+    cursor: pointer;
+    box-shadow: inset -1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+  }
+  .tab-content label:hover,
+  .tab-content input[type="radio"]:checked + label {
+    color: #285050;
+    background-color: #ffff99;
+  }
+
+  .tab-content .tab-box {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #ffff99;
+    border-radius: 0 5px 5px 5px;
+    box-sizing: border-box;
+  }
+
+  .tab-content > .tab-box > div {
+    display: none;
+  }
+
+  // @articles.each do |$article| {
+  //   // p article.id
+  //   // #tab1#{$article.id}:checked ~ .tab-box > #tabView1 {
+  //   //   display: block;
+  //   // }
+  //   .tab#{$article}{}
+  // }
+
+  #tab1:checked ~ .tab-box > #tabView1 {
+    display: block;
+  }
+
+  #tab2:checked ~ .tab-box > #tabView2 {
+    display: block;
+  }
+
+  #tab3:checked ~ .tab-box > #tabView3 {
+    display: block;
+  }
+
+  #tab31:checked ~ .tab-box > #tabView31 {
+    display: block;
+  }

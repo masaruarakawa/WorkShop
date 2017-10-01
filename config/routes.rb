@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   resources :math_works
   resources :writings
   root 'home#index'

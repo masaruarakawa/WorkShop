@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>記事</h1>
+<%= link_to '記事の作成', new_article_path, class: 'btn btn-default btn-sm' %>
+<br><br>
+
+<table class='table table-bordered'>
+  <thead bgcolor="#006e54">
+    <tr>
+      <th>カテゴリー</th>
+      <th>タイトル</th>
+      <th>記事本文</th>
+      <th>コラム</th>
+      <th colspan="3">編集</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+    <% p article.id %>
+      <tr>
+        <td><%= article.category %></td>
+        <td><%= article.title %></td>
+        <td><%= simple_format(article.content) %></td>
+        <td>
+          <div class="tab-content">
+            <input type="radio" id="tab<%=article.id %>1" name="tab" checked><label for="tab<%=article.id %>1">問題</label>
+            <input type="radio" id="tab2" name="tab"><label for="tab2">ヒント</label>
+            <input type="radio" id="tab3" name="tab"><label for="tab3">答え</label>
+            <div class="tab-box">
+              <div id="tabView<%=article.id %>1"><%= simple_format(article.tab1) %></div>
+              <div id="tabView2"><%= simple_format(article.tab2) %></div>
+              <div id="tabView3"><%= simple_format(article.tab3) %></div>
+            </div>
+          </div>
+        </td>
+        <td><%= link_to '編集', edit_article_path(article) ,class: 'btn btn-info '%></td>
+        <td><%= link_to '削除', article, method: :delete, data: { confirm: '削除してもよろしいですか?' } ,class: 'btn btn-warning '%></td>
+      </tr>
+
+    <% end %>
+  </tbody>
+</table>
+
+<br>

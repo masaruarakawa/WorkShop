@@ -9,6 +9,7 @@ body {
   color: #eeffff;
 }
 
-input {
+input,textarea {
   color: #285050;
 }
+@import "articles.scss";

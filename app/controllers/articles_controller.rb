@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/new
   def new
+    @articles = Article.all
     @article = Article.new
   end
 
@@ -65,6 +66,7 @@ class ArticlesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
+      @articles = Article.all
       @article = Article.find(params[:id])
     end
 

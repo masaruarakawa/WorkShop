@@ -13,35 +13,35 @@
 
   <div class='form-group'>
     <%= form.label :category：カテゴリー, class: 'col-sm-2 control-label' %>
-    <%= form.text_field :category, id: :article_category %>
+    <%= form.text_field :category, id: :article_category, class: 'col-sm-3' %>
   </div>
 
   <div class='form-group'>
     <%= form.label :title：タイトル, class: 'col-sm-2 control-label' %>
-    <%= form.text_field :title, id: :article_title %>
+    <%= form.text_field :title, id: :article_title , class: 'col-sm-3'%>
   </div>
 
   <div class='form-group'>
     <%= form.label :content：記事本文, class: 'col-sm-2 control-label' %>
-    <%= form.text_area :content, id: :article_content , class: 'col-sm-6' ,size:"100x20"%>
+    <%= form.text_area :content, id: :article_content , class: 'col-sm-7' ,size:"100x20"%>
   </div>
 
   <div class='form-group'>
     <%= form.label :tab1：問題 , class: 'col-sm-2 control-label'%>
-    <%= form.text_area :tab1, id: :article_tab1, class: 'col-sm-6' ,size:"100x3" %>
+    <%= form.text_area :tab1, id: :article_tab1, class: 'col-sm-7' ,size:"100x3" %>
   </div>
 
   <div class='form-group'>
     <%= form.label :tab2：ヒント, class: 'col-sm-2 control-label' ,size:"100x3"%>
-    <%= form.text_area :tab2, id: :article_tab2, class: 'col-sm-6' ,size:"100x3"%>
+    <%= form.text_area :tab2, id: :article_tab2, class: 'col-sm-7' ,size:"100x3"%>
   </div>
 
   <div class='form-group'>
-    <%= form.label :tab3：解答, class: 'col-sm-2 control-label' %>
-    <%= form.text_area :tab3, id: :article_tab3, class: 'col-sm-6' %>
+    <%= form.label :tab3：解答, class: 'col-sm-2 control-label' ,size:"100x3"%>
+    <%= form.text_area :tab3, id: :article_tab3, class: 'col-sm-7' ,size:"100x3"%>
   </div>
 
   <div class="actions">
-    <%= form.submit '登録/更新',class: 'btn btn-success btn-xs'%>
+    <%= form.submit '登録/更新',class: 'btn btn-success btn-sm'%>
   </div>
 <% end %>

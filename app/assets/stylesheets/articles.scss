@@ -6,8 +6,6 @@
   display: inline-block;
   padding: 5px 10px;
   font-weight: bold;
-  // font-size: 13px;
-  // color: #009900;
   background-color: #696969;
   cursor: pointer;
   box-shadow: inset -1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -31,28 +29,4 @@
 
 .tab-content > .tab-box > div {
   display: none;
-}
-
-// @articles.each do |$article| {
-//   // p article.id
-//   // #tab1#{$article.id}:checked ~ .tab-box > #tabView1 {
-//   //   display: block;
-//   // }
-//   .tab#{$article}{}
-// }
-
-#tab1:checked ~ .tab-box > #tabView1 {
-  display: block;
-}
-
-#tab2:checked ~ .tab-box > #tabView2 {
-  display: block;
-}
-
-#tab3:checked ~ .tab-box > #tabView3 {
-  display: block;
-}
-
-#tab31:checked ~ .tab-box > #tabView31 {
-  display: block;
 }

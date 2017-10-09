@@ -10,7 +10,11 @@ body {
   //font-size: 18px;
 }
 
-input,textarea {
+input,textarea,select {
   color: #285050;
+}
+
+thead {
+  background-color: #006e54
 }
 @import "articles.scss";

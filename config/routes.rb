@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tasks
   resources :categories
   resources :articles
   resources :math_works

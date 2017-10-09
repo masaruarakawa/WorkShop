@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171009071801) do
+ActiveRecord::Schema.define(version: 20171009131243) do
 
   create_table "articles", force: :cascade do |t|
     t.string "category"
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(version: 20171009071801) do
     t.integer "digit2"
     t.integer "operator"
     t.integer "times"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.integer "category_id"
+    t.string "task"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

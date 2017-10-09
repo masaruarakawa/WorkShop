@@ -1,0 +1,27 @@
+<h1>タスクリスト</h1>
+<%= render 'form', task: @task %>
+<br>
+<p id="notice"><%= notice %></p>
+<p>本サイトは、ただいま開発中！<br>
+  ↓↓↓ 現在の作業内容 ↓↓↓</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>カテゴリー</th>
+      <th>今後のタスク</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.category.name %></td>
+        <td><%= task.task %></td>
+        <td style="padding:5px"><%= link_to '編集', edit_task_path(task),class: 'btn btn-info btn-xs' %></td>
+        <td style="padding:5px"><%= link_to '削除', task, method: :delete, data: { confirm: '削除してもよろしいですか?' } ,class: 'btn btn-warning btn-xs'%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

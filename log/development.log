@@ -14825,3 +14825,1455 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:43:30 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (9.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (45.2ms)
+Completed 200 OK in 158ms (Views: 140.7ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 12:43:32 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (7.0ms)
+  [1m[36mWriting Load (0.3ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 118ms (Views: 114.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:43:32 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (16.5ms)
+Completed 200 OK in 149ms (Views: 145.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:44:57 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  Rendered articles/index.html.erb within layouts/articles (4.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/witch/WorkShop/app/views/articles/index.html.erb:16: syntax error, unexpected ',', expecting ')'
+imple_format(article.content), class: 'col-sm-7' );@output_b
+                              ^):
+  
+app/views/articles/index.html.erb:16: syntax error, unexpected ',', expecting ')'
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:45:04 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (14.3ms)
+Completed 200 OK in 131ms (Views: 126.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:45:40 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (9.9ms)
+Completed 200 OK in 84ms (Views: 81.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 12:45:42 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (3.8ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:45:42 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (12.5ms)
+Completed 200 OK in 97ms (Views: 93.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:46:01 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (15.2ms)
+Completed 200 OK in 80ms (Views: 77.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 12:46:02 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (5.7ms)
+  [1m[36mWriting Load (0.3ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 83ms (Views: 78.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:46:03 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (24.8ms)
+Completed 200 OK in 119ms (Views: 116.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:46:13 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (19.8ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 12:46:14 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (3.6ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 91ms (Views: 86.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-08 12:46:15 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (13.4ms)
+Completed 200 OK in 90ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-10-08 13:15:58 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (32.6ms)
+  [1m[36mMathWork Load (2.4ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (74.7ms)
+Completed 200 OK in 271ms (Views: 227.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-10-08 13:16:04 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (1.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 172ms (Views: 136.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:16:08 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AHsYTkdVaT5XJXASaYPVUOzG8Gijq0T1VSCLbarxim4ddOyXfBjuNBoOK4nQFAMOQSSvDa3hrNdf64xq6gmlxA==", "answer"=>"llp", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 92ms (Views: 88.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 13:18:09 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (14.1ms)
+  [1m[36mWriting Load (0.3ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 180ms (Views: 169.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/writings/1" for 127.0.0.1 at 2017-10-08 13:18:12 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 226ms (Views: 218.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-10-08 13:18:15 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PzXNZjeZgvqDukYYnIQwEOF30hVAwACWOCsGAbK0C0QxB4vITOFOzo3QaAVSRLABKHLauc8bU2abPMFm8Hu8gw==", "answer"=>"kkop", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.6ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 82ms (Views: 77.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/writings/1?controler=writings" for 127.0.0.1 at 2017-10-08 13:22:36 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FVVU8AezXwlqM1GBs8kZrv95GOZy4vjE6qsgDRhGXvPB6hUTcAAARSDM3sVHvA48Am9amjXED0JwnsJDRUFzrQ==", "answer"=>"lll", "controler"=>"writings", "id"=>"1"}
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 13:24:16 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (3.3ms)
+  [1m[36mWriting Load (0.3ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 99ms (Views: 78.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-10-08 13:24:17 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (3.2ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 95ms (Views: 79.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-10-08 13:24:19 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.9ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 76ms (Views: 71.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:24:22 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JhOGkkYf8oEX+Sxs7fpSyA9m2ARYjj83ZUgXRO+Bq887HHJLfVJ1i1rSd/dUbYSWooSHYVbE1xVvgxBDr3mEZQ==", "answer"=>"a", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:24:46 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"diSPi8QPGmC+JXaUvATnabo091YCcUFcrT6RRcd4x16im85os7xFLPTa+dBIcfD7RyK1KkVXtto3C3MLmn/qAA==", "answer"=>"kk", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 85ms (Views: 81.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:25:13 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OYykTbcibeVKMQRmaPO03sQZf9fmxNjDCKoHgoTHj/DtM+WuwJEyqQDOiyKchqNMOQ89q6HiL0WSn+XM2cCirg==", "answer"=>"9", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-10-08 13:28:17 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (4.1ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/1" for 127.0.0.1 at 2017-10-08 13:28:19 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 67ms (Views: 62.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:28:23 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBCowDotgJE084PriOqef/oE7kSOQuWAMSXbNWR6ku5FH1wZAWAHm3nY2HAxfUghV+axIYAIDaI77twyJIK9RA==", "answer"=>"aa", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:28:43 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUZ77q9wYZi54Ea1TekQ0SZI+PxUyod7nh3pY286Jc/Z+ToN2MM+1PMfyfG5nAdD2166gBPscP0EKAstMj0IkQ==", "answer"=>"i", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 74ms (Views: 71.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:30:05 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxuR0qWaKZPSw2C+b7hc9eGzEpxt8+MNWrRN4xKg3hhrpNAx0il235g87/qbzUtnHKVQ4CrVFIvAga+tT6fzRg==", "answer"=>"", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:31:04 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j1tof0WaFpm18g+p2aQSgyZbObRailkLuzvZs2hROyxb5CmcMilJ1f8NgO0t0QUR2017yB2sro0hDjv9NVYWcg==", "answer"=>"ll", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:31:21 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pjAVUXXnH1ZLN73kq/Df7rKbyFRlG6JBOXQ+yrrAlkKJ4G2MmTDMRPTUbNm2tTtR9wtXRaymQ+e0DK1d+wvBw==", "answer"=>"", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.5ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 69ms (Views: 64.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:34:22 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cJ4t/DqKALdQfLVRWtEaNsD0axnkNr3MY1J9511lvyCkIWwfTTlf+xqDOhWupA2kPeIpZaMQSkr5Z5+pAGKSfg==", "answer"=>":", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.3ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:34:37 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cJ4t/DqKALdQfLVRWtEaNsD0axnkNr3MY1J9511lvyCkIWwfTTlf+xqDOhWupA2kPeIpZaMQSkr5Z5+pAGKSfg==", "answer"=>";;", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:37:26 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PBuYNOyu0vWNwSNIgy0PQuOxsDcattoMm+T9LAilYoHopNnXmx2Nucc+rAx3WBjQHqfyS12QLYoB0R9iVaJP3w==", "answer"=>":", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:49:12 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Co8JUgnZ0MspfbevcqTSKqiZP2xxGqghXmrSua+LQ5reMEixfmqPh2OCOOuG0cW4VY99EDY8X6fEXzD38oxuxA==", "answeri"=>"s", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (3.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 284ms (Views: 238.0ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:49:36 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k7drGxRYz5KlV/xuEzq+dPAxJrwwuDxwrfqQuW2R9sRHCCr4Y+uQ3u+ocyrnT6nmDSdkwHeey/Y3z3L3MJbbmg==", "”answer”"=>"；", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 114ms (Views: 110.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:50:16 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nidIxh7eSUd78qZMxO4vGkbtKay6KuloOcBJulUgUHVKmAklaW0WCzENKQgwmziIu/tr0P0MHu6j9av0CCd9Kw==", "”answer”"=>"q", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 104ms (Views: 100.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:52:11 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ymk4fVF4gR1jL/tgIrhDsQgbr9y99FPYCVpdiRuCZ1u21nmeJsveUSnQdCTWzVQj9Q3toPrSpF6Tb7/HRoVKBQ==", "answer1"=>"s", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `push' for nil:NilClass):
+  
+app/controllers/math_works_controller.rb:15:in `show'
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:53:04 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ymk4fVF4gR1jL/tgIrhDsQgbr9y99FPYCVpdiRuCZ1u21nmeJsveUSnQdCTWzVQj9Q3toPrSpF6Tb7/HRoVKBQ==", "answer1"=>";", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 102ms (Views: 83.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:53:23 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4tbQ5cVLCg/u57EFV8gsLN508Q35Q/BEihYzr+ek8LE2aZEGsvhVQ6QYPkGjvTu+I2Kzcb5lB8IQI9HhuqPd7w==", "answer8"=>"", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 80ms (Views: 76.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:53:49 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YmqqSKaBAn4xa1jdmq3An0yA0FMxCoreKW7DGkeCrSO21eur0TJdMnuU15lu2NcNsZaSL3YsfVizWyFUGoWAfQ==", "answer1"=>"1", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 73ms (Views: 70.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/1?controler=math_works" for 127.0.0.1 at 2017-10-08 13:54:01 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d9qlhFm1134w5GAf0WxaPGngUdGh6jUgEnLlR5lUssOjZeRnLgaIMnob71slGU2ulPYTrebMwqaIRwcJxFOfnQ==", "answer3"=>"3", "controler"=>"math_works", "id"=>"1"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 76ms (Views: 73.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 13:55:02 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (6.9ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 99ms (Views: 84.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/writings" for 127.0.0.1 at 2017-10-08 13:55:16 +0900
+Processing by WritingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pV5NDAfTGe86CsJO+K8WfE3Yl/eMhuwHUAmjaPppz3Uds1WlQW0RuKn8Dybw/G/geyD9QjYtTbWDeRqLj7SIXQ==", "writing"=>{"question"=>"ko", "correct"=>"ftf", "hint"=>"by", "explanation"=>"ii"}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "writings" ("question", "correct", "hint", "explanation", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "ko"], ["correct", "ftf"], ["hint", "by"], ["explanation", "ii"], ["created_at", "2017-10-08 04:55:16.828522"], ["updated_at", "2017-10-08 04:55:16.828522"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/writings
+Completed 302 Found in 11ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 13:55:16 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (7.9ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/writings/24" for 127.0.0.1 at 2017-10-08 13:56:03 +0900
+Processing by WritingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KamQsTInOAE7h9pkzrKsmIklmUYeZPnzCTq8FHHYYjv9FtFSRZRnTXF4VSA6x7sKdDPbOllCDnWTD15aLN9PZQ==", "id"=>"24"}
+  [1m[36mWriting Load (0.3ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "writings" WHERE "writings"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/writings
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-08 13:56:04 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (5.4ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings/2/edit" for 127.0.0.1 at 2017-10-08 13:56:09 +0900
+Processing by WritingsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWriting Load (0.4ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering writings/edit.html.erb within layouts/application
+  Rendered writings/_form.html.erb (3.6ms)
+  Rendered writings/edit.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 89ms (Views: 84.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/writings/2" for 127.0.0.1 at 2017-10-08 13:56:12 +0900
+Processing by WritingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K6gda5sPfNwLh3iTish4/g9hkRFblzu/n7r7dGZuMJi4J5/nRO6UrqEyU6c1nJuyz6rHZqZn/zsnKdXjUZawbQ==", "writing"=>{"question"=>"はじめまして", "correct"=>"nice to meet you", "hint"=>"nice", "explanation"=>"最初のあいさつ"}, "commit"=>"登録/更新", "id"=>"2"}
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/writings/2
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/writings/2" for 127.0.0.1 at 2017-10-08 13:56:12 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWriting Load (0.3ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 87ms (Views: 82.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/writings/2?controler=writings" for 127.0.0.1 at 2017-10-08 13:56:22 +0900
+Processing by WritingsController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"12EMAsDHfJkZu2tc89EwFpM+FLJJXsnOamoFqLEF8NID3k3ht3Qj1VNE5BgHpCeEbihWzg54PkjwX+fm7ALdjA==", "answer"=>"ii", "controler"=>"writings", "id"=>"2"}
+  [1m[36mWriting Load (0.1ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering writings/show.html.erb within layouts/application
+  Rendered writings/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/math_works" for 127.0.0.1 at 2017-10-08 13:56:30 +0900
+Processing by MathWorksController#index as HTML
+  Rendering math_works/index.html.erb within layouts/application
+  Rendered math_works/_form.html.erb (5.9ms)
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT "math_works".* FROM "math_works"[0m
+  Rendered math_works/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 85ms (Views: 80.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/math_works/5" for 127.0.0.1 at 2017-10-08 13:56:38 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 96ms (Views: 92.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/5?controler=math_works" for 127.0.0.1 at 2017-10-08 13:56:49 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GPVSqhJf6y+AXguJ6mQae57uVLs9Jv9jiM7N85iCT3C9SHwHSxQfoYjCsc+9z9xM2XoYUI9FsNrZ4AH+LR1rrQ==", "answer3"=>"6", "controler"=>"math_works", "id"=>"5"}
+  [1m[36mMathWork Load (0.2ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/math_works/5?controler=math_works" for 127.0.0.1 at 2017-10-08 13:57:28 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qLIaqroyRUpG6K4iOQGQeGsBCyncF+dJuXrGrb9ZoZ18DVtJzYEaBgwXIWbNdIfqlhdJVZsxEM8jTyTj4l6Mww==", "answer4"=>"", "controler"=>"math_works", "id"=>"5"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/math_works/5?controler=math_works" for 127.0.0.1 at 2017-10-08 13:57:41 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jHf3l96cjfFtmer+FzSyxs+2peHYuRQFLb2slCZYcD5YyLZ0qS/SvSdmZbrjQaVUMqDnnZ+f44O3iE7ae19dYA==", "answer4"=>"5", "controler"=>"math_works", "id"=>"5"}
+  [1m[36mMathWork Load (0.5ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 79ms (Views: 75.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/math_works/5?controler=math_works" for 127.0.0.1 at 2017-10-08 13:57:58 +0900
+Processing by MathWorksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n6s8lcn8776FNNhlbO/4okYPdRAQgPugfaGw0ydpOqxLFH12vk+w8s/LVyGYmu8wuxk3bFemDCbnlFKdem4X8g==", "answer4"=>"4", "controler"=>"math_works", "id"=>"5"}
+  [1m[36mMathWork Load (0.1ms)[0m  [1m[34mSELECT  "math_works".* FROM "math_works" WHERE "math_works"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering math_works/show.html.erb within layouts/application
+  Rendered math_works/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-09 16:11:59 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (4.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (255.3ms)
+Completed 200 OK in 1131ms (Views: 1106.4ms | ActiveRecord: 9.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20171009071801)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171009071801"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles" for 127.0.0.1 at 2017-10-09 16:18:30 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (30.8ms)
+Completed 200 OK in 601ms (Views: 584.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-09 16:18:31 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (16.4ms)
+Completed 200 OK in 185ms (Views: 182.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categorys" for 127.0.0.1 at 2017-10-09 16:18:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/categorys"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:18:53 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 74ms (Views: 69.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-09 16:19:44 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (7.6ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 16:19:48 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (16.1ms)
+  Rendered articles/new.html.erb within layouts/articles (19.3ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 86ms (Views: 83.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 16:22:17 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (9.0ms)
+  Rendered articles/new.html.erb within layouts/articles (11.1ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:22:28 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 16:23:35 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (5.2ms)
+  Rendered articles/new.html.erb within layouts/articles (8.6ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 16:23:57 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (3.0ms)
+  Rendered articles/new.html.erb within layouts/articles (4.5ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 16:24:25 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (5.0ms)
+  Rendered articles/new.html.erb within layouts/articles (6.7ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 16:24:36 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (3.4ms)
+  Rendered articles/new.html.erb within layouts/articles (5.8ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 68ms (Views: 65.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 16:26:08 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (3.9ms)
+  Rendered articles/new.html.erb within layouts/articles (5.9ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 73ms (Views: 70.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 16:26:31 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (7.1ms)
+  Rendered articles/new.html.erb within layouts/articles (8.7ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 71ms (Views: 68.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:26:40 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 71ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:29:41 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.7ms)
+  Rendered categories/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 12ms
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: category, local: true) do |form| %>
+    2:   <% if category.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
+    5: 
+  
+app/views/categories/_form.html.erb:2:in `block in _app_views_categories__form_html_erb___1345999710179221355_70160143124740'
+app/views/categories/_form.html.erb:1:in `_app_views_categories__form_html_erb___1345999710179221355_70160143124740'
+app/views/categories/index.html.erb:4:in `_app_views_categories_index_html_erb___3251917442078266825_70160143210480'
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:30:00 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:32:14 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 109ms (Views: 99.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-10-09 16:32:32 +0900
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (6.9ms)
+  Rendered categories/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 96ms (Views: 82.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:32:34 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (5.6ms)
+  Rendered categories/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: category, local: true) do |form| %>
+    2:   <% if category.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
+    5: 
+  
+app/views/categories/_form.html.erb:2:in `block in _app_views_categories__form_html_erb___1345999710179221355_70160102334740'
+app/views/categories/_form.html.erb:1:in `_app_views_categories__form_html_erb___1345999710179221355_70160102334740'
+app/views/categories/index.html.erb:4:in `_app_views_categories_index_html_erb___3251917442078266825_70160102468360'
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:33:49 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 62ms (Views: 51.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-10-09 16:33:52 +0900
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.7ms)
+  Rendered categories/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 70ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2017-10-09 16:33:56 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XhAUOXZhEYLHN7yZhjkaeHGpFgqVj0fb1lASs7UonJWBVgeQcvwYv/uSLDbvQoAUqXvCDP10HVpIZ0FQBmlC5Q==", "category"=>{"name"=>"教育"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "教育"], ["created_at", "2017-10-09 07:33:56.753975"], ["updated_at", "2017-10-09 07:33:56.753975"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories/1
+Completed 302 Found in 13ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-10-09 16:33:56 +0900
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 88ms (Views: 76.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:33:58 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-10-09 16:34:02 +0900
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.5ms)
+  Rendered categories/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2017-10-09 16:34:16 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/GahnN9MFuRisgMqLU/tcNU+9gTYZv3MYVeH6yWSPQYjILI129Ef2V4Xk4VENHccDewiArCdp03/YNQIltPjdg==", "category"=>{"name"=>"免許"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "免許"], ["created_at", "2017-10-09 07:34:16.923680"], ["updated_at", "2017-10-09 07:34:16.923680"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories/2
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2017-10-09 16:34:16 +0900
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:34:20 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 72ms (Views: 67.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-10-09 16:34:21 +0900
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.4ms)
+  Rendered categories/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2017-10-09 16:34:26 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XAA6AyMR+92fniAXmI7g44b+Xp4zujtCwCUcBwpFWWGDRimqJ4zy4KM7sLjx9XqPXiyKmFtBYcNeEk/kuQSHEQ==", "category"=>{"name"=>"簿記"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "簿記"], ["created_at", "2017-10-09 07:34:26.924214"], ["updated_at", "2017-10-09 07:34:26.924214"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories/3
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2017-10-09 16:34:26 +0900
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:34:28 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:35:58 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.4ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2017-10-09 16:36:27 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0OycLjuCPVz5hrMvh0cik51x+JcgCZ7WcacJR6iQO7wEU93NTDFiELN5PGtzMjUBYGe662cvaVDrkusJ9ZcW4g==", "category"=>{"name"=>"fじえf"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fじえf"], ["created_at", "2017-10-09 07:36:27.012304"], ["updated_at", "2017-10-09 07:36:27.012304"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories/4
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/4" for 127.0.0.1 at 2017-10-09 16:36:27 +0900
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:36:29 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/categories/4" for 127.0.0.1 at 2017-10-09 16:36:34 +0900
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CRsTrJ518wprEmaYmkOLm6Tq07kc6AMpR3dbCfSICRfdpFJP6casRiHt6dxuNpwJWfyRxVvO9K/dQrlHqY8kSQ==", "id"=>"4"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 4]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories
+Completed 302 Found in 9ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:36:34 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.8ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 122ms (Views: 116.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:38:05 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.4ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:38:27 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.2ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:40:09 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (13.1ms)
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 173ms (Views: 158.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:41:06 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2017-10-09 16:41:47 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9Bcx/SwwMyPv8RDwwYaMCXyF6tJFYogM74Q0/CkmCdUgqHAeW4Nsb6UOn7Q185ubgZOorgJEf4p1sdaydCEkiw==", "category"=>{"name"=>"テスト"}, "commit"=>"登録/更新"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "テスト"], ["created_at", "2017-10-09 07:41:47.301249"], ["updated_at", "2017-10-09 07:41:47.301249"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories/5
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/categories/5" for 127.0.0.1 at 2017-10-09 16:41:47 +0900
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 96ms (Views: 87.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:42:06 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.6ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 120ms (Views: 117.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:43:06 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:43:48 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.4ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:47:23 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (6.1ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:48:45 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (3.0ms)
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 91ms (Views: 87.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:49:45 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (5.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:50:54 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.7ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:51:27 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.3ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:52:02 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.7ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:52:43 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.8ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:53:25 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 74ms (Views: 71.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:53:41 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.9ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:54:52 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:55:03 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (3.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:55:21 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.3ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:55:41 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.7ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 79ms (Views: 77.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:56:04 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (3.1ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:56:33 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.3ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:56:54 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.8ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:57:15 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (4.6ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:58:07 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 16:58:52 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.3ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2017-10-09 17:05:39 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qb3ZdU7BLsoDhWMHN96NFoX2JnPpINop7DbPRirIwUh9ApiWOXJxhkl67EPDq5qEeOBkD64GLa92Ay0Id8/sFg==", "category"=>{"name"=>"チェック"}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "チェック"], ["created_at", "2017-10-09 08:05:39.086344"], ["updated_at", "2017-10-09 08:05:39.086344"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories/6
+Completed 302 Found in 15ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/categories/6" for 127.0.0.1 at 2017-10-09 17:05:39 +0900
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 17:06:26 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 100ms (Views: 85.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2017-10-09 17:06:29 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UyqxXtXuD82kr5h1wSjwLB4ur6gb/cCz0oVs2p10HaGMbKL30XMG8JgKCNqoU2pAxvx7rnMGmjJMsj85LjXD0Q==", "category"=>{"name"=>"ddd"}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "ddd"], ["created_at", "2017-10-09 08:06:29.880013"], ["updated_at", "2017-10-09 08:06:29.880013"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories/7
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/categories/7" for 127.0.0.1 at 2017-10-09 17:06:29 +0900
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 73.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-09 17:06:58 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (3.7ms)
+  [1m[36mWriting Load (0.4ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 75ms (Views: 62.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/writings" for 127.0.0.1 at 2017-10-09 17:07:04 +0900
+Processing by WritingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mMm+urQXUKzx20Pzc8Wzd+BpAj+myKPEdbpBiX1YobogJKYT8qlY+2Itjpt7lsrr1pFoihxjAnamyvhqCIXmkg==", "writing"=>{"question"=>"q", "correct"=>"q", "hint"=>"w", "explanation"=>"e"}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "writings" ("question", "correct", "hint", "explanation", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "q"], ["correct", "q"], ["hint", "w"], ["explanation", "e"], ["created_at", "2017-10-09 08:07:04.479774"], ["updated_at", "2017-10-09 08:07:04.479774"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/writings
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-09 17:07:04 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (2.3ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/writings/25" for 127.0.0.1 at 2017-10-09 17:09:47 +0900
+Processing by WritingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qsLCHo9NrKvDEqc8rVDAOQU0N+rRxrOBj85/YlsyZQl+fYP9+P7z54ntKHhZJder+CJ1lpbgRAcV+50sBjVIVw==", "id"=>"25"}
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT  "writings".* FROM "writings" WHERE "writings"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "writings" WHERE "writings"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/writings
+Completed 302 Found in 25ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/writings" for 127.0.0.1 at 2017-10-09 17:09:47 +0900
+Processing by WritingsController#index as HTML
+  Rendering writings/index.html.erb within layouts/application
+  Rendered writings/_form.html.erb (3.8ms)
+  [1m[36mWriting Load (0.2ms)[0m  [1m[34mSELECT "writings".* FROM "writings"[0m
+  Rendered writings/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-09 17:09:55 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (44.0ms)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-10-09 17:09:57 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/articles
+  Rendered articles/_form.html.erb (5.5ms)
+  Rendered articles/new.html.erb within layouts/articles (8.1ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 75ms (Views: 72.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 17:09:58 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (3.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 72ms (Views: 63.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2017-10-09 17:10:04 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1DXA0JoH5WvtAMSkUFdCaDKZ9gOJx+0tstB076/+12ALc9N5nprsVtGlVAs5LNgE6ksiBeE8t6ws5ycMHL8JEA==", "category"=>{"name"=>"ふぃえふぇ"}, "commit"=>"登録/更新"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "ふぃえふぇ"], ["created_at", "2017-10-09 08:10:04.419102"], ["updated_at", "2017-10-09 08:10:04.419102"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 17:10:04 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (3.8ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories/8/edit" for 127.0.0.1 at 2017-10-09 17:10:07 +0900
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering categories/edit.html.erb within layouts/application
+  Rendered categories/_form.html.erb (3.7ms)
+  Rendered categories/edit.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 73ms (Views: 68.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/categories/8" for 127.0.0.1 at 2017-10-09 17:10:11 +0900
+Processing by CategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v6mFj6RT9icBWjbTMzGt+NT0nC7oXLxL4X/pvFCCB+QA9mBTa6YEjgkZsvNJ5tCZi0tOy5Y/Lrze1fDTOcZMNw==", "category"=>{"name"=>"ふぃえふぇっl"}, "commit"=>"登録/更新", "id"=>"8"}
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "categories" SET "name" = ?, "updated_at" = ? WHERE "categories"."id" = ?[0m  [["name", "ふぃえふぇっl"], ["updated_at", "2017-10-09 08:10:11.718820"], ["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 17:10:11 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.3ms)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/categories/8" for 127.0.0.1 at 2017-10-09 17:10:15 +0900
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8t6nWUdw/iU5+GmzFqrpSWIOhjSl/m6/y067ZQ/khX8mYea6MMOhaXMH5vfi3/7bnxjESOLYmTlRe1krUuOoIQ==", "id"=>"8"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 17:10:16 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.3ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 17:11:06 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.9ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 69ms (Views: 57.5ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/categories/7" for 127.0.0.1 at 2017-10-09 17:11:10 +0900
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gUsoEf68kJFuy0XD9h+6rmsJo5iSFAd31EzqC0b7zkdV9GnyiQ/P3SQ0yocCaq08lh/h5NUy8PFOeQhFG/zjGQ==", "id"=>"7"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories
+Completed 302 Found in 10ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 17:11:10 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.2ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 86ms (Views: 83.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-09 21:33:31 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 220ms (Views: 213.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-10-09 21:33:35 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/articles
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/articles (57.7ms)
+Completed 200 OK in 147ms (Views: 141.5ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/categories/6" for 127.0.0.1 at 2017-10-09 22:06:11 +0900
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xx2QB2Sv/QAGavA70uFgivB6GFBNFppC9c6MiRKFn5MTotHkExyiTEyVf38mlHcYDWxaLAowbcRv+27HT4KyzQ==", "id"=>"6"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/categories
+Completed 302 Found in 79ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-10-09 22:06:11 +0900
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/_form.html.erb (33.6ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (54.3ms)
+Completed 200 OK in 321ms (Views: 315.9ms | ActiveRecord: 0.2ms)
+
+

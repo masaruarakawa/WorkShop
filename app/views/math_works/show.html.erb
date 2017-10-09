@@ -26,7 +26,7 @@
         <td>問題<%= i %></td>
         <td><%= x %> ＋ <%= y %> =</td>
         <td><%= form_tag(controler:"math_works" ,action:"show" ) do %>
-            <%= text_field_tag :answer ,"",size:20 ,placeholder:"ここに入力してエンター" ,id:"ans" ,autocomplete:"off"%>
+            <%= text_field_tag :"answer#{i}" ,"",size:20 ,placeholder:"ここに入力してエンター" ,id:"ans#{i}" ,autocomplete:"off"%>
             <% end %></td>
         <td><%= x.to_i + y.to_i %></td>
       </tr>

@@ -4,7 +4,8 @@
 
 
 <% @articles.each do |article| %>
-<table class='table '>
+<div class='form-group'>
+<table class='table'>
   <thead bgcolor="#006e54">
     <tr>
       <th>【<%= article.category %>】 <%= article.title %>　　　　<%=article.created_at%>
@@ -33,4 +34,5 @@
       </td>
     </tr>
 </table>
+</div>
 <% end %>

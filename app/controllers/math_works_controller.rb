@@ -11,6 +11,12 @@ class MathWorksController < ApplicationController
   # GET /math_works/1
   # GET /math_works/1.json
   def show
+    if request.post? then
+      #@answer = params[:answer]
+      @answer = []
+      @answer.push(params[:answer])
+      p @answer
+    end
   end
 
   # GET /math_works/new
